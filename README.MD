@@ -41,7 +41,7 @@ A aplicação é composta por um backend, que expõe uma API RESTful, e um front
 ```bash
 # PASSOS PARA EXECUTAR A APLICAÇÃO
 # 1. Clone o repositório
-git clone https://github.com/usuario/repositorio
+git clone https://github.com/fornaro3/cooking_class.git
 
 #Passos para executar o backend
 # 1. Acesse a pasta do projeto
