@@ -1,0 +1,31 @@
+.minhas-aulas-page {
+    padding: 24px;
+    width: 100%;
+}
+
+.minhas-aulas-page .ant-typography {
+    margin-bottom: 24px;
+}
+
+.minhas-aulas-card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.minhas-aulas-card-img {
+    height: 140px;
+    object-fit: cover;
+}
+
+.minhas-aulas-progress {
+    margin-top: 12px;
+}
+
+.minhas-aulas-empty {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.minhas-aulas-empty .ant-empty-description {
+    margin-bottom: 16px;
+}

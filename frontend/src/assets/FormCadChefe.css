@@ -1,0 +1,26 @@
+.form-cad-chefe {
+    width: 100%;
+}
+
+.form-cad-chefe .ant-form-item {
+    margin-bottom: 16px;
+}
+
+.form-cad-chefe .ant-input,
+.form-cad-chefe .ant-input-password,
+.form-cad-chefe .ant-picker,
+.form-cad-chefe .ant-upload {
+    border-radius: 8px;
+}
+
+.form-cad-chefe .ant-picker {
+    padding: 4px 11px;
+}
+
+.form-cad-chefe .ant-upload .ant-btn {
+    border-radius: 8px;
+}
+
+.form-cad-chefe .submit-item {
+    margin-top: 24px;
+}

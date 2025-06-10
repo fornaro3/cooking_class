@@ -1,0 +1,95 @@
+/* src/assets/Payment.css */
+
+.payment-page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.payment-card,
+.summary-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    background: #fff;
+}
+
+/* Tabs */
+.payment-tabs .ant-tabs-nav .ant-tabs-tab {
+    font-weight: 500;
+    color: #333;
+}
+
+.payment-tabs .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #f8b54a !important;
+}
+
+.payment-tabs .ant-tabs-ink-bar {
+    background: #f8b54a !important;
+    height: 2px !important;
+}
+
+/* Quando hover na aba */
+.payment-tabs .ant-tabs-nav .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #e0a63a !important;
+}
+
+/* QR section */
+.qr-section {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.qr-code {
+    display: block;
+    word-break: break-all;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Linhas do resumo */
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.summary-line.total {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Botões primários */
+.ant-btn-primary,
+.checkout-btn {
+    background: #f8b54a !important;
+    border: none !important;
+    color: #333 !important;
+    height: 40px;
+}
+
+.ant-btn-primary:hover,
+.checkout-btn:hover {
+    background: #e0a63a !important;
+    color: #222 !important;
+}
+
+/* Link "Voltar ao Carrinho" e demais links */
+.back-button,
+.ant-typography a {
+    color: #f8b54a !important;
+}
+
+.ant-btn-link a:hover,
+.ant-typography a:hover {
+    color: #e0a63a !important;
+}
+
+/* Remove qualquer traço azul de borda ou foco */
+.ant-tabs-nav-list,
+.ant-tabs-tab-btn:focus,
+.ant-btn-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

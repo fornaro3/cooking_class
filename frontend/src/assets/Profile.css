@@ -1,0 +1,17 @@
+/* src/assets/Profile.css */
+.profile-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.profile-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-profile .ant-form-item {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,93 @@
+/* src/assets/Login.css */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background: #ffffff;
+}
+
+.login-sidebar {
+    flex: 1;
+    background-color: #f8b54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-sidebar .logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.login-form-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form-wrapper h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.login-form-wrapper p {
+    margin-bottom: 24px;
+    color: #666;
+}
+
+.login-form-wrapper .ant-tabs-nav {
+    margin-bottom: 24px;
+}
+
+.login-form-wrapper .ant-tabs-ink-bar {
+    background: #f8b54a !important;
+}
+
+.login-form-wrapper .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #f8b54a !important;
+}
+
+.login-form-wrapper .ant-tabs-tab-btn {
+    color: #333 !important;
+}
+
+.form-login {
+    background: transparent;
+}
+
+.form-login .ant-form-item-control-input {
+    width: 100%;
+}
+
+.form-login .ant-input,
+.form-login .ant-input-password {
+    border-radius: 8px;
+}
+
+.form-login .ant-form-item {
+    margin-bottom: 16px;
+}
+
+/* Override para todos os botões primários na tela de login */
+.login-form-wrapper .ant-btn-primary {
+    width: 100%;
+    background-color: #f8b54a !important;
+    border-color: #f8b54a !important;
+    color: #333 !important;
+}
+
+.login-form-wrapper .ant-btn-primary:hover,
+.login-form-wrapper .ant-btn-primary:focus {
+    background-color: #e0a43d !important;
+    border-color: #e0a43d !important;
+    color: #333 !important;
+}

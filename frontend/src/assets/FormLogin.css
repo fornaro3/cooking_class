@@ -1,0 +1,9 @@
+.form-login .ant-form-item {
+    margin-bottom: 16px;
+}
+
+.form-login .ant-input,
+.form-login .ant-input-password {
+    border-radius: 8px;
+    padding: 10px;
+}

@@ -1,0 +1,9 @@
+.form-cad-aluno .ant-form-item {
+    margin-bottom: 16px;
+}
+
+.form-cad-aluno .ant-input,
+.form-cad-aluno .ant-input-password {
+    border-radius: 8px;
+    padding: 10px;
+}
