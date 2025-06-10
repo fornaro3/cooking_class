@@ -19,7 +19,7 @@ A aplicação é composta por um backend, que expõe uma API RESTful, e um front
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem:** Node.JS
+- **Linguagem:** Node.js
 - **CMS:** Strapi
 - **Banco de Dados:** SQLite
 - **Front-end:** JavaScript
@@ -41,7 +41,7 @@ A aplicação é composta por um backend, que expõe uma API RESTful, e um front
 ```bash
 # PASSOS PARA EXECUTAR A APLICAÇÃO
 # 1. Clone o repositório
-git clone https://github.com/fornaro3/cooking_class.git
+git clone https://github.com/usuario/repositorio
 
 #Passos para executar o backend
 # 1. Acesse a pasta do projeto
