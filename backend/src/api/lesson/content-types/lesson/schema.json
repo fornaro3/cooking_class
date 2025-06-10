@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "singularName": "lesson",
+    "pluralName": "lessons",
+    "displayName": "lesson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "texto",
+        "video",
+        "imagem"
+      ]
+    },
+    "aula": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::aula.aula",
+      "inversedBy": "lessons"
+    },
+    "user_lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-lesson.user-lesson",
+      "mappedBy": "lessonid"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aulas",
+  "info": {
+    "singularName": "aula",
+    "pluralName": "aulas",
+    "displayName": "aula",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "teacher": {
+      "type": "string"
+    },
+    "cuisine": {
+      "type": "enumeration",
+      "enum": [
+        "Japonesa",
+        "Italiana",
+        "Francesa",
+        "Russa",
+        "Alemã",
+        "Mexicana"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "aula"
+    },
+    "chefid": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cooking-user.cooking-user",
+      "inversedBy": "aulas"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

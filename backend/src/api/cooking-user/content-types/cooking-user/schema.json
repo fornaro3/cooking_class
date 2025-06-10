@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cooking_users",
+  "info": {
+    "singularName": "cooking-user",
+    "pluralName": "cooking-users",
+    "displayName": "cooking_user"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "aluno",
+        "chefe"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "aulas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::aula.aula",
+      "mappedBy": "chefid"
+    },
+    "user_lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-lesson.user-lesson",
+      "mappedBy": "userid"
+    }
+  }
+}

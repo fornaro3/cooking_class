@@ -43,16 +43,24 @@ A aplicação é composta por um backend, que expõe uma API RESTful, e um front
 # 1. Clone o repositório
 git clone https://github.com/usuario/repositorio
 
+#Passos para ajustar o banco de dados
+# 1. Configure a sua senha no arquivo appsettings.json
+"ConnectionStrings": {
+  "DefaultConnection": "server=localhost;port=3306;database=kanbanban;user=root;password=**SuaSenha**"
+  }
+
 #Passos para executar o backend
 # 1. Acesse a pasta do projeto
-cd backend
+cd kanbanban
 
 # 2. Restaure os pacotes
-npm install
+dotnet restore
 
-# 3. Execute a aplicação
-npm run dev
+# 3. Aplique as migrações do Entity Framework Core
+dotnet ef database update
 
+# 4. Execute a aplicação
+dotnet run
 
 #Agora vamos executar o frontend
 # 1. Acesse a pasta correta

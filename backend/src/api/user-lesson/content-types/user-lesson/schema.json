@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_lessons",
+  "info": {
+    "singularName": "user-lesson",
+    "pluralName": "user-lessons",
+    "displayName": "userLesson",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "userid": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cooking-user.cooking-user",
+      "inversedBy": "user_lessons"
+    },
+    "lessonid": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lesson.lesson",
+      "inversedBy": "user_lessons"
+    },
+    "statusLesson": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "completed"
+      ]
+    }
+  }
+}
